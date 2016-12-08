@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="script.js" type="text/javascript" language="javascript"></script>
+    </head>
+    <body>
+        <div id="divListagem">
+            <input type="button" value="Detalhado" id="btnDetalhado">
+            <table id="grid">
+                <!--<thead>-->
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Ações</th>
+                    </tr>
+                <!--</thead>
+                <tbody>
+                    
+                </tbody>-->
+            </table>
+        </div>
+        <div id="divDetalhado">
+            <form id="fCliente" action="btn">
+                <input type="button" value="Listagem" id="btnListagem">
+                <fieldset id="fsCliente">
+                    <legend>Detalhado - Cliente</legend>
+                    <p>
+                        <label for="cCliCodigo">Código: </label>
+                        <input type="text" name="tCliCodigo" id="cCliCodigo" readonly>
+                    </p>
+                    <p>
+                        <label for="cCliNome">Nome:</label>
+                        <input type="text" name="tCliNome" id="cCliNome" size="30" maxlength="30" placeholder="Nome do Cliente">
+                    </p>
+                </fieldset>
+                <input type="button" value="Adicionar" id="btnAdicionar">
+            </form>
+        </div>
+    </body>
+</html>
