@@ -1,7 +1,52 @@
 @charset "UTF-8";
 body{
     font-family: Arial, sans-serif;
+    text-align: center;
 }
-div#divListagem{
+/* DIVs - LISTAGEM E DETALHADO */
+div#divListagem{    
+    display: inline-block;
+}
+div#divDetalhado{
     display: none;
+}
+/* TABELA LISTAGEM - #GRID */
+table#grid{
+    position: relative;
+	border: 1px solid #606060;
+	border-spacing: 0px;
+}
+table#grid tr th, table#grid tr td{
+	border: 1px solid #606060;
+    width: auto;
+}
+table#grid thead th{
+	text-align: center;
+    padding: 10px;
+    background: lightgray;
+}
+table#grid tbody td{
+	text-align: left;
+	vertical-align: middle;  
+	padding: 5px 15px;
+}
+/* BOTÕES */
+input[type="button"]{
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+input#btnListagem, input#btnDetalhado{
+    margin-bottom: 10px;
+}
+form#fCliente input[type="button"]#btnSubmit{
+    margin-top: 10px;
+}
+/* FIELDSET - FSCLIENTE */
+fieldset#fsCliente{
+    border: 1px thick black;
+}
+fieldset#fsCliente p{
+    text-align: right;
 }
